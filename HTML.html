@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Processing</h1>
+        <div class="input-container">
+            <input type="file" id="fileInput">
+        </div>
+        <div class="options-container">
+            <label for="documentType">Select Document Type:</label>
+            <select id="documentType">
+                <option value="electricBill">Electric Bill</option>
+                <option value="gasBill">Gas Bill</option>
+                
+                <option value="waterBill">Water Bill</option>
+                <option value="insurance">Insurance</option>
+                <option value="aadharCard">Aadhar Card</option>
+                <option value="aadharCardback">Aadhar card back</option>
+
+                <option value="panCard">PAN Card</option>
+                <option value="voterId">Voter ID</option>
+                <option value="passport">Passport</option>
+            </select>
+        </div>
+        <div class="image-container">
+            <img id="uploadedImage" src="#" alt="Uploaded Image">
+        </div>
+        <button id="extractButton">Extract</button>
+        <div class="output-container">
+            <h2>Output</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
